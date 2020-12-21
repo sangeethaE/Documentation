@@ -1,6 +1,5 @@
 ## Maven Installation Steps:
-### Note : - Apache Maven requires Java.It was installed in the Previous Step.
-### Install Maven
+Note : - Apache Maven requires Java.It was installed in the Previous Step.
 ```
 #cd /opt
 #wget http://apache.mirrors.pair.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
