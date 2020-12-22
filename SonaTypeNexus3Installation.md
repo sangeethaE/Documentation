@@ -54,3 +54,8 @@ Username: admin
 Password: admin123
 
 ```
+### Login to Nexus and Configure the Repository:
+
+Login to Nexus->ServerAdministartion and Configuration ->Repository->+Create Repository->Maven2(Hosted)
+
+<image src="images/NexusArtifactory.jpg"/>
