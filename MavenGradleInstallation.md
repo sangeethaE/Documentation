@@ -1,6 +1,6 @@
-## Maven/Gradle Installation Steps:
+## Maven/Gradle Installation Steps
 
-### Maven Installation Steps:
+### Maven Installation Steps
 Note : - Apache Maven requires Java.It was installed in the Previous Step.
 
 Maven Install:
@@ -23,7 +23,7 @@ Verify Maven version:
 <image src="images/mavenVersionCheck.jpg"/>
 
 
-### Gradle Installation Steps:
+### Gradle Installation Steps
 
 Prerequisites: Gradle requires a Java JDK version 7 or higher to run. 
 You can <a href="https://systems-platform.github.io/Documentation/JavaInstallation">check here</a> on how to install Java on Ubuntu 16.04 if you don't have it installed. To check the version of Java that is currently set as the default, issue the command below:
