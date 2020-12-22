@@ -4,7 +4,7 @@
 
 To get started with installing JFrog Artifactory, follow the steps below:
 
-### Step 1: Prepare Ubuntu
+Step 1: Prepare Ubuntu
 Before installing packages on Ubuntu, you must first update the server. To do that, run the commands below:
 
 ```
@@ -14,7 +14,7 @@ sudo apt autoremove
 ```
 Running the commands above will update the remove obsolete packages from your system. It’s also a good to reboot the server after running the above commands.
 
-### Step 2: Install OpenJDK 8
+Step 2: Install OpenJDK 8
 
 To properly use JFrog Artifactory, you will need Java installed. First, download the Java 8 Development Kit: either the official Oracle JDK or Open JDK
 
@@ -40,7 +40,7 @@ OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
 ```
 Now that you have updated and installed Java, continue below to installing JFrog.
 
-### Step 3: Download and Install JFrog Artifactory
+Step 3: Download and Install JFrog Artifactory
 The quickest and easiest way to get JFrog installed is via a APT repository. Installing JFrog from the repository will allow you to always get the latest updates as they’re released.
 
 To install, follow the steps below:
