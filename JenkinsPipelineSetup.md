@@ -7,14 +7,18 @@
     o	SSH Agent Plugin
     o	SSH Credentials Plugin
     o	CloudBees Docker Build and Publish plugin
+    
 ### Integrate Maven and Java in Jenkins:
+
  Login to Jenkins->Dashboard->ManageJenkins->GlobalToolConfiguration->AddJDK.
+ 
  <image src="images/JenkinsJDKPath.jpg"/>
  
  Login to Jenkins->Dashboard->ManageJenkins->GlobalToolConfiguration->AddMaven.
  <image src="images/JenkinsMavenPath.jpg"/>
  
  Provide Credentials for git,dockerhub,sonar,nexus, in Credential Store at Jenkins->Dashboard->ManageJenkins->ManageCredentials.
+ 
  <image src="images/GlobalCredentials.jpg"/>
  
  Create Docker File and Upload into GitHub:
