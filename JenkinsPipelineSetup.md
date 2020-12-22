@@ -48,10 +48,10 @@ Dashboard->Manage Jenkins->Configuration->Jfrog->Add Artifactory Server
 
 Login to Jenkins and Create Pipeline Project and add the pipeline Script and Build the Script.
 
- Maven :
+ Maven PipeLine :
 
 <image src="images/pipelineResult.jpg"/>
 
- Gradle : 
+ Gradle PipeLine : 
  
 <image src="images/JenkinsGradlePipeline.jpg"/>
