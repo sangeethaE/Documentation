@@ -1,5 +1,6 @@
-### Note : - Nexus requires Java.It was Installed in Previous Step.
-##Nexus Installation:
+
+## Nexus Installation:
+Note : - Nexus requires Java.It was Installed in Previous Step.
 ```
 #cd /opt
 #wget http://download.sonatype.com/nexus/3/nexus-3.26.1-02-unix.tar.gz
