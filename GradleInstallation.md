@@ -27,8 +27,11 @@ Extract the downloaded archive to the newly created directory.
  ```
  ls /opt/gradle/gradle-5.0
  ```
+ 
  ### Step 3: Configure your system environment
+ 
  For running Gradle, firstly add the environment variable GRADLE_HOME. This should point to the unpacked files from the Gradle website (the directory of the unzipped distribution)
+ 
 ```
 export PATH=$PATH:/opt/gradle/gradle-5.0/bin
 ```
