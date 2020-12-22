@@ -77,10 +77,12 @@ When you’re done installing, open your web browser and browser to the server�
 
 http://localhost:8081/artifactory/
 You should see the login portal similar to the one below:
+<image src="images/JfrogLogin.jpg"/>
+
 Login with Username:  admin and Password: password
 
 You’ll be prompted to change the temporary password above. When you do, you’ll able to start setting up your environment.
 
 Login to Jfrog Dashboard->Administration->Repositories->Add Repositories->Local Repositories->Maven->
 
-<image src="images/JfrogRepo.jpg"/>
+<image src="images/JFrogRepo.jpg"/>
