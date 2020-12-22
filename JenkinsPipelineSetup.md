@@ -31,13 +31,13 @@
  Create Manifesto file for K8s and upload into GitHub:
 <image src="images/K8mfFile.jpg"/>
 
-### Jenkins Nexus Integration
+### Jenkins-Nexus Integration
 For Nexus integration with Jenkins follow the below step:
 
 Dashboard->Manage Jenkins->Configuration->Nexus->Add Artifactory Server
 <image src="images/JenkinsNexus.jpg"/>
 
-### Jenkins Jfrog Integration
+### Jenkins-Jfrog Integration
 
 For Jfrog Integration with Jenkins follow the below step:
 
