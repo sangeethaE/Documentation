@@ -6,7 +6,13 @@
 
 <a href="https://systems-platform.github.io/Documentation/MavenInstallation"><b>MavenInstallation</b></a>
 
+<a href="https://systems-platform.github.io/Documentation/GradleInstallation"><b>GradleInstallation</b></a>
+
+<a href="https://systems-platform.github.io/Documentation/JFrogInstallation"><b>JFrogInstallation</b></a>
+
 <a href="https://systems-platform.github.io/Documentation/SonaTypeNexus3Installation"><b>SonaTypeNexus3Installation</b></a>
+
+<a href="https://systems-platform.github.io/Documentation/JFrogInstallation.md"><b>JFrogInstallation</b></a>
 
 <a href="https://systems-platform.github.io/Documentation/DockerInstallation"><b>DockerInstallation</b></a>
 
