@@ -148,7 +148,7 @@ Username: admin
 Password: admin123
 
 ```
-### Login to Nexus and Configure the Repository:
+<b>Login to Nexus and Configure the Repository</b>
 
 Login to Nexus->ServerAdministartion and Configuration ->Repository->+Create Repository->Maven2(Hosted)
 
