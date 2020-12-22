@@ -37,6 +37,10 @@ Login to Nexus->ServerAdministartion and Configuration ->Repository->+Create Rep
 
 <image src="images/NexusArtifactory.jpg"/>
 
+For Jfrog follow the below step:
+Dashboard->Manage Jenkins->Configuration->Jfrog->Add Artifactory Server
+<image src="images/JenkinsJfrog.jpg"/>
+
 ## Configure pipeline in Jenkins:
 
 Login to Jenkins and Create Pipeline Project and add the pipeline Script and Build the Script.
