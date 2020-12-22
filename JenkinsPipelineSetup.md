@@ -44,14 +44,14 @@ For Jfrog Integration with Jenkins follow the below step:
 Dashboard->Manage Jenkins->Configuration->Jfrog->Add Artifactory Server
 <image src="images/JenkinsJfrog.jpg"/>
 
-## Configure pipeline in Jenkins:
+## Configure pipeline in Jenkins :
 
 Login to Jenkins and Create Pipeline Project and add the pipeline Script and Build the Script.
 
-## Maven :
+ Maven :
 
 <image src="images/pipelineResult.jpg"/>
 
-## Gradle : 
+ Gradle : 
  
 <image src="images/JenkinsGradlePipeline.jpg"/>
