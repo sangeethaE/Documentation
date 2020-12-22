@@ -104,3 +104,45 @@ Login Credenials for Sonarqube:
 Username: admin
 
 Password: admin
+
+### Sonar-Scanner Installation Steps:
+Download Sonar-Scanner using below wget
+```
+#sudo wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.5.0.2216-linux.zip
+```
+Unzip the Source
+```
+#unzip sonar-scanner-cli-4.5.0.2216-linux.zip
+```
+Set the SonarScanner properties in sonar-scanner.properties as shown below
+```
+#cd $install_directory/conf/
+
+#vi sonar-scanner.properties
+
+----- Default SonarQube server
+sonar.host.url=http://localhost:9000
+```
+Create a configuration file in your project's root directory called sonar-project.properties
+Set the SonarProject properties in sonar-project.properties as shown below
+
+```
+#vi sonar-project.properties
+
+# must be unique in a given SonarQube instance
+sonar.projectKey=my:project
+
+# --- optional properties ---
+
+# defaults to project key
+#sonar.projectName=My project
+# defaults to 'not provided'
+#sonar.projectVersion=1.0
+
+# Path is relative to the sonar-project.properties file. Defaults to .
+#sonar.sources=.
+
+# Encoding of the source code. Default is default system encoding
+#sonar.sourceEncoding=UTF-8
+```
+
