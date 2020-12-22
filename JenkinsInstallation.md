@@ -1,6 +1,8 @@
-Note : - Jenkins requires Java as PreRequisite.
 
-###Jenkins Installation:
+
+### Jenkins Installation:
+
+Note : - Jenkins requires Java as PreRequisite.
 
 ```
 #wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
