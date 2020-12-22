@@ -4,13 +4,9 @@
 
 <a href="https://systems-platform.github.io/Documentation/JavaInstallation"><b>JavaInstallation</b></a>
 
-<a href="https://systems-platform.github.io/Documentation/MavenInstallation"><b>MavenInstallation</b></a>
+<a href="https://systems-platform.github.io/Documentation/MavenGradleInstallation"><b>Maven/Gradle Installation</b></a>
 
-<a href="https://systems-platform.github.io/Documentation/GradleInstallation"><b>GradleInstallation</b></a>
-
-<a href="https://systems-platform.github.io/Documentation/JFrogInstallation"><b>JFrogInstallation</b></a>
-
-<a href="https://systems-platform.github.io/Documentation/SonaTypeNexus3Installation"><b>SonaTypeNexus3Installation</b></a>
+<a href="https://systems-platform.github.io/Documentation/JFrogNexusInstallation"><b>JFrog/Nexus Installation</b></a>
 
 <a href="https://systems-platform.github.io/Documentation/JFrogInstallation"><b>JFrogInstallation</b></a>
 
