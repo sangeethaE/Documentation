@@ -38,6 +38,7 @@ export PATH=$PATH:/opt/gradle/gradle-5.0/bin
 This is done in order for Gradle to be executable anywhere on the system.
 
 ### Step 4: Verifying installation
+
 Issue the command below to run Gradle and display the version
 ```
 gradle -v
