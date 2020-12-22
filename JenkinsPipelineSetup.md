@@ -17,6 +17,10 @@
  Login to Jenkins->Dashboard->ManageJenkins->GlobalToolConfiguration->AddMaven.
  <image src="images/JenkinsMavenPath.jpg"/>
  
+ For Gradle follow the below step
+ Login to Jenkins->Dashboard->ManageJenkins->GlobalToolConfiguration->AddGradle.
+ <image src="images/JenkinsGradlePath.jpg"/>
+ 
  Provide Credentials for git,dockerhub,sonar,nexus, in Credential Store at Jenkins->Dashboard->ManageJenkins->ManageCredentials.
  
  <image src="images/GlobalCredentials.jpg"/>
