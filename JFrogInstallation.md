@@ -76,7 +76,9 @@ Step 4: Access Artifactory Portal
 When you’re done installing, open your web browser and browser to the server’s hostname or IP address as shown below:
 
 http://localhost:8081/artifactory/
+
 You should see the login portal similar to the one below:
+
 <image src="images/JfrogLogin.jpg"/>
 
 Login with Username:  admin and Password: password
