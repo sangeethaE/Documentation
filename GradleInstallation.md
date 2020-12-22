@@ -39,3 +39,4 @@ Issue the command below to run Gradle and display the version
 ```
 gradle -v
 ```
+<image src="images/GradleVersionCheck.jpg"/>
