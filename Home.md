@@ -8,8 +8,6 @@
 
 <a href="https://systems-platform.github.io/Documentation/JFrogNexusInstallation"><b>JFrog/Nexus Installation</b></a>
 
-<a href="https://systems-platform.github.io/Documentation/JFrogInstallation"><b>JFrogInstallation</b></a>
-
 <a href="https://systems-platform.github.io/Documentation/DockerInstallation"><b>DockerInstallation</b></a>
 
 <a href="https://systems-platform.github.io/Documentation/JenkinsInstallation"><b>JenkinsInstallation</b></a>
