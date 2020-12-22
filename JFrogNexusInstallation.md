@@ -1,6 +1,6 @@
-## JFrog/Nexus Installation Steps:
+## JFrog/Nexus Installation Steps
 
-### JFrog Installation Steps:
+### JFrog Installation Steps
 
 To get started with installing JFrog Artifactory, follow the steps below:
 
@@ -93,7 +93,7 @@ Login to Jfrog Dashboard->Administration->Repositories->Add Repositories->Local 
 
 
 
-## Nexus Installation:
+## Nexus Installation
 Note : - Nexus requires Java.It was Installed in Previous Step.
 ```
 #cd /opt
