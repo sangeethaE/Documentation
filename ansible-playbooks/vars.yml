@@ -1,0 +1,3 @@
+grd_path: https://services.gradle.org/distributions/gradle-6.4.1-bin.zip 
+mvn_path : http://apache.mirrors.pair.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+download_folder: /opt
