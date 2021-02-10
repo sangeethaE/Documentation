@@ -1,0 +1,43 @@
+---
+ - name: Download Maven
+   hosts: 10.0.0.22
+   gather_facts: false
+   remote_user: root
+   vars_files:
+     - vars.yml
+   tasks:
+
+   - name: Download Apache Maven
+     get_url:
+       url:  " {{ mvn_path }} "
+       dest: "{{download_folder}}/apache-maven-3.6.3-bin.tar.gz"
+
+   - name: Untar file
+     unarchive:
+       src: /opt/apache-maven-3.6.3-bin.tar.gz     
+       dest: /opt
+
+   - name: Move file
+     command: mv /opt/apache-maven-3.6.3 /opt/maven
+
+   - name : Create a script file
+     file:
+       path: /etc/profile.d/mavenenv.sh
+       state: touch
+
+   - name: Update path for maven use
+     lineinfile:
+       path: /etc/profile.d/mavenenv.sh
+       state: present
+       line: 'export PATH=/opt/maven/bin:${PATH}'
+
+   - name: Adding permission to file
+     file:
+       dest: /etc/profile.d/mavenenv.sh
+       mode: a+x
+
+   - name: Source env variable
+     lineinfile:
+       dest: ~/.profile
+       line: 'source /etc/profile.d/mavenenv.sh'
+       create: yes

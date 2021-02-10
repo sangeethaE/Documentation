@@ -1,0 +1,12 @@
+---
+ - name: Install git
+   hosts: build-server
+   gather_facts: False
+   remote_user: root  
+   vars:
+     - packages: git
+   tasks:
+     - name: Installing {{ packages }} 
+       yum:
+         name: git
+         state: present

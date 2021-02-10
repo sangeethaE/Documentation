@@ -1,0 +1,43 @@
+---
+ - name: Gradle Installation playbook
+   hosts: 10.0.0.22
+   gather_facts: false
+   remote_user: root
+   vars_files:
+     - vars.yml
+   tasks:
+   - name: Download Gradle
+     get_url:
+       url:  " {{ grd_path }} "
+       dest: /opt/gradle-6.4.1.zip
+
+   - name: Unzip gradle
+     unarchive:
+       src: /opt/gradle-6.4.1.zip     
+       dest: /opt
+       remote_src: yes
+
+   - name: Move file
+     command: mv /opt/gradle-6.4.1 /opt/gradle
+
+   - name : Create a script file
+     file:
+       path: /etc/profile.d/gradle.sh
+       state: touch
+
+   - name: Update path for maven use
+     lineinfile:
+       path: /etc/profile.d/gradle.sh
+       state: present
+       line: 'export PATH=/opt/gradle/gradle-6.4.1/bin:${PATH}'
+
+   - name: Adding permission to file
+     file:
+       dest: /etc/profile.d/gradle.sh
+       mode: a+x
+
+   - name: Source env variable
+     lineinfile:
+       dest: ~/.profile
+       line: 'source /etc/profile.d/gradle.sh'
+       create: yes
