@@ -1,0 +1,89 @@
+---
+ - name: Ensure bash, OpenSSl are the latest versions
+   hosts: build-server
+   remote_user: root
+   become: yes
+   vars:
+    postgresql_data_dir: /var/lib/pgsql/data
+    PG_VERSION: 10
+    postgresql_bin_path: /usr/bin
+    postgresql_user: sonar
+   vars_files:
+    - vault-pass.yml
+   tasks:
+
+    - name: Installing bash in  RHEL8
+      yum:
+       name: bash
+       update_cache: true
+       state: latest
+    - name: Installing openssl in RHEL8
+      yum:
+       name: openssl
+       state: latest
+    - name: Installing python in RHEL8
+      command: yum install python3 -y
+    - name: Installing python in psycopg2
+      command: pip3 install psycopg2-binary
+
+    - name: Installing postgresql
+      yum:
+       name: postgresql
+       update_cache: true
+       state: latest
+    - name: Installing postgresql-contrib
+      yum:
+       name: postgresql-contrib
+       update_cache: true
+       state: latest
+    - name: Installing postgresql-server
+      yum:
+       name: postgresql-server
+       update_cache: true
+       state: latest
+    - name: Check if PostgreSQL database is initialized.
+      stat:
+       path: "{{ postgresql_data_dir }}/PG_VERSION"
+      register: pgdata_dir_version
+
+    - name: Ensure PostgreSQL database is initialized.
+      command: "{{ postgresql_bin_path }}/initdb -D {{ postgresql_data_dir }}"
+      when: not pgdata_dir_version.stat.exists
+      become: true
+      become_user: "{{ postgresql_user }}"
+      vars:
+       ansible_ssh_pipelining: true
+    - name: Starting postgresql by shell
+      shell: systemctl start postgresql
+    - name: postgres starting
+      service:
+       name: postgresql
+       state: started
+       enabled: true
+    - name: Ensure database is created
+      postgresql_db:
+       name: sonar
+       encoding: UTF-8
+       lc_collate: en_US.UTF-8
+       lc_ctype: en_US.UTF-8
+       template: template0
+       state: present
+    - name: Ensure user has access to the database
+      postgresql_user:
+       db: sonar
+       name: sonar
+       password: "{{ sonarpassword }}"
+       priv: ALL
+       state: present
+    - name: Ensure user does not have unnecessary privileges
+      postgresql_user:
+       name: sonar
+       role_attr_flags: NOSUPERUSER,NOCREATEDB
+       state: present
+
+   handlers:
+    - name: Restart postgresql
+      service:
+       name: postgresql
+       state: restarted
+
